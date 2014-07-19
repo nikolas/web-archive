@@ -1,0 +1,21 @@
+body { color: black;
+       background: #ffff80; }
+
+:link { color: #0000ee }
+:visited { color: #551a8b }
+:active { color: #ff0000 }
+
+table { empty-cells: show }
+caption { caption-side: bottom; }
+
+h1.c { text-align: center }
+/* h2 { font-size: 150% }
+h3 { font-size: 100% } */
+
+span.red { color: #ff0000 }
+span.rb  { color: #ff0000; font-weight: bold }
+span.bi  { color: #0000ff; font-style: italic }
+
+sub { font-size: 50% }
+
+div.c { text-align: center }

@@ -1,0 +1,134 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+        background: #0d6dfd;
+	color: #fff;
+	margin: 10px 40px 40px 40px;
+        max-width: 80ex;
+	font-weight: bold;
+	text-align: left;
+}
+
+a 		{ color: #aff;  }
+a:link		{ color: #aff;  }
+a:visited	{ color: #aff;  }
+a:active	{ color: #aff;  }
+a:hover		{ color: #aff;  }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .header a
+                { text-decoration: none; }
+
+h1 {
+        margin: 0em 0em;
+        color: #fff;
+        /*font-size: x-large;*/
+        /*font-variant: small-caps;*/
+        text-align: left;
+        }
+
+h2, .inlinepage h1 {
+        color: #fff;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+	padding: 0;
+        text-transform: uppercase;
+	font-size: medium;
+        font-variant: normal;
+	font-weight: bold;
+	}
+
+h3, h5, h6 {
+	margin: 0em 0em;
+	font-size: medium;
+	color: #fff;
+	}
+
+h4 {
+	margin: 0.3em 0em 0em 1em;
+	font-size: 1.3em;
+	color: #fff;
+}
+
+ul {
+	margin: 0em 0em;
+}
+
+
+blockquote {
+        font-style: italic;
+        /*background-color: #a0a0a0;*/
+	/*margin: 0 3ex;*/
+        padding: 0 1ex;
+	border-left: 1px solid #aaaac0;
+	}
+
+blockquote p {
+        margin: 0.9ex 0;
+        }
+
+blockquote em {
+        font-style: normal;
+        }
+
+pre {
+        /*background-color: #a0a0a0;*/
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0em 1em 0.5em 3em;
+	border-left: 3px dashed #7070b0;
+	}
+
+p {
+	margin: 0.5em 0em;
+	text-indent: 30pt;
+}
+
+p.note {
+        font-size: smaller;
+        }
+
+hr {
+        border: none 0;
+        border-top: 2px dashed #7070b0;
+        height: 1px;
+        width: 10ex;
+        text-align: left;
+        margin: 1ex auto 1ex 0;
+}
+
+table {
+        /*border: none 0;*/
+        border-collapse: collapse;
+	padding: 0.5ex;
+}
+
+thead {
+	border-bottom: 2px dashed #7070b0;
+}
+
+tr, td {
+        border: 0px solid #aaaac0;
+        padding: 0ex 1ex;
+}
+
+table[border="1"] tr, table[border="1"] tr td {
+        border: 1px solid #aaaac0;
+}
+
+//table:first-child tr{
+//        font-weight: bold;
+//}
+
+.note {
+        font-size: smaller;
+}
+
+
+key {
+        font-family: monospace;
+}
+
+code {
+        font-family: monospace;
+	font-weight: bold;
+        font-size: 1em;
+}

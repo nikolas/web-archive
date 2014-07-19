@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0057)http://www.statslab.cam.ac.uk/~eva/nethack/iaq.html#bones -->
+<html lang="en" data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Infrequently Asked Questions About Nethack</title>
+<link rel="stylesheet" type="text/css" href="./Infrequently Asked Questions About Nethack_files/personal.css">
+<link rel="contents" href="http://www.statslab.cam.ac.uk/~eva/index.html">
+</head>
+
+<body data-ember-extension="1">
+<h1>Infrequently Asked Questions About Nethack</h1>
+
+<h3>Introduction</h3>
+This page is a repository for notes on some of the more intriguing and
+obscure topics which occasionally come up on <a href="news:rec.games.roguelike.nethack">rec.games.roguelike.nethack</a>.
+If you're a newbie, you should probably look elsewhere; there are
+spoilers here, but nothing that is likely to help you ascend.  Most of
+what is discussed on this page applies to both Nethack and Slash'EM,
+and I shall indicate differences where I am aware of them.
+<p>
+</p><ul>
+<li><a href="http://www.statslab.cam.ac.uk/~eva/nethack/iaq.html#riders">Taming the riders</a>
+</li><li><a href="http://www.statslab.cam.ac.uk/~eva/nethack/iaq.html#wishes">Refusing wishes</a>
+</li><li><a href="http://www.statslab.cam.ac.uk/~eva/nethack/iaq.html#survive">Surviving indefinitely</a>
+</li><li><a href="./Infrequently Asked Questions About Nethack_files/Infrequently Asked Questions About Nethack.html">Public machine more difficult?</a>
+</li><li><a href="http://www.statslab.cam.ac.uk/~eva/nethack/iaq.html#wishirl">A Nethack wish in real life</a>
+</li></ul>
+
+<a name="riders"></a>
+<h3>Taming The Riders</h3>
+There has been some interest in taming the endgame Riders,
+apparently sparked off by the story of <a href="http://groups.google.com/groups?hl=en&safe=off&th=fc981c7c3d73855f,15&rnum=1&selm=3B30D928.B600EB2E%40web.de">Patito
+the pacifist Gnomish Healer</a> who ascended with a pet Pestilence.
+<p>
+There is nothing intrinsically untameable about the Riders, unlike the
+Wizard of Yendor or Demogorgon, neither of whom can be tamed under any
+circumstances.  (See my <a href="http://www.statslab.cam.ac.uk/~eva/slashem/pets.html">spoiler on tame
+monsters</a> for a complete list of untameable monsters.)  However,
+they are very difficult to tame because they are level 30 and have
+100% magic resistance.  This means that they will resist any attempt
+to tame them with a scroll of taming, spell of charm monster or magic
+harp, or with the revivification technique available to high-level
+Healers in Slash'EM.  The ``You feel charismatic!'' effect of a magic
+trap ignores the target's magic resistance, but sadly there are no
+magic traps on the Astral Plane.
+</p><p>
+Famine and Pestilence can be tamed by draining some levels from them
+and then repeatedly casting charm monster.  Slash'EM Healers can
+employ the somewhat easier approach of level-draining them until the
+charm monster spell would have a non-zero chance of working (one level
+drain is enough if you're level 30), then killing them and
+resurrecting them with the revivification technique.  Death is immune
+to level drain, and hence cannot be tamed in this way.  In Slash'EM,
+it used to be trivial for a Healer to tame all three Riders by
+reviving them, but this was considered a bug and has now been fixed.
+</p><p>
+If the Riders are polymorphed, they will lose their 100% magic
+resistance and potentially become tameable.  They will always resist
+the wand, potion or spell of polymorph, but if you polymorph into a
+green slime, you can slime them.  This approach is not particularly
+useful, as all you will get is a tame green slime which was once
+Death, and since monster polymorph is always permanent in vanilla
+Nethack, there is no way to tame Death.  In Slash'EM, however, you can
+polymorph into a genetic engineer and hit Death causing her to
+"undergo a freakish metamorphosis".  This is a temporary polymorph,
+and if you tame Death while she is polymorphed she will remain tame
+when she reverts.
+</p><p>
+
+<a name="wishes"></a>
+</p><h3>Refusing Wishes</h3>
+Sometimes people who are attempting the wishless challenge find an
+unidentified wand, test it by engraving or zapping, and discover that
+it's a wand of wishing.  They then wonder what they can do to avoid
+breaking their conduct.
+<p>
+The answer to this question is highly dependent on the version of
+Nethack you are playing (or, if you are playing Slash'EM, the version
+of Nethack it is based on).
+</p><ul>
+<li>In Nethack 3.4.*, wishing for ``nothing'' enables you to refuse a
+wish and keep your wishless conduct.  You can also genocide ``none''
+to retain genocideless conduct instead of typing an invalid monster
+name or class five times.
+</li><li>In 3.3.1, there was no way to refuse a wish.  You just had
+to wish for an iron chain (the canonical useless item), and know that
+you did not gain anything from the wish which was inflicted on you.
+</li><li>In 3.3.0, wishing for gold did not count as a wish.
+</li><li>In 3.2.2 and earlier, the game did not track conducts.  Wishing
+for your own quest artifact would probably have been a good choice,
+since you wouldn't have received anything.  (It's no longer a good
+choice because it breaks the ``no artifact wishes'' conduct.)
+</li></ul>
+<p>
+
+<a name="survive"></a>
+</p><h3>Surviving Indefinitely</h3>
+Is it possible for a Nethack character to live infinitely long?  This
+question does not refer to ascension or to explore mode or wizard
+mode, but to a normal game lasting for infinitely many turns.  After a
+long and interesting <a href="http://groups-beta.google.com/group/rec.games.roguelike.nethack/browse_thread/thread/b492d52207e341ed/758f169d527c081c" title="discussion about surviving indefinitely in Nethack">discussion</a>,
+it was discovered that this is indeed possible.  However, it
+became more difficult in Nethack 3.4.1, as it is no longer possible to
+gain the unchanging intrinsic by eating an amulet of unchanging.
+(Thanks to Ben Yee for pointing this out.)
+<p>
+There are two factors which must be kept under control when attempting
+this challenge: hit points and nutrition.  If either of those becomes
+too low, you die.  Of course, there are ways to die that don't involve
+running out of hit points or nutrition, but these are relatively easy
+to avoid and prove that you are avoiding.
+</p><p>
+Since there is no way to generate an infinite supply of healing
+potions, the only practical strategy for keeping your hit points up is
+to ensure that nothing can reduce them.  The psychic blasts of
+(master) mind flayers can only be defended against by genociding them.
+</p><p>
+You also have to protect yourself against both melee attacks and
+ranged attacks.  One way to do this is to reverse genocide blue
+jellies (or some other sessile monster), so that you are surrounded by
+eight of them, and then read a scroll of earth, so that there are also
+eight boulders on the squares surrounding you.  You may need to repeat
+this procedure if some of the jellies are killed when you read the
+scroll of earth.  Monsters can't see you through the wall of boulders,
+so won't attack you from afar, and even monsters that could dig,
+phase, or pick up the boulders won't be able to get next to you while
+the jellies are there.  Aaron Ranta has done
+this in wizard mode in version 3.3.1, and has placed a <a href="http://www.iphc.washington.edu/staff/aaron/NHStressTest.jpg" title="snapshot of an immortal character">snapshot of his game</a> on
+the Web.
+</p><p>
+Now that you cannot gain the unchanging intrinsic, it is difficult to
+eliminate the need to eat.  Wearing the amulet is not sufficient,
+because it will cause you to consume food at the rate of one nutrition
+point per 20 turns.
+Relying on eating monster corpses works wonderfully in a real game,
+but not in this theoretical discussion.  For one thing, perhaps no
+monsters will be generated for a very long time.  For another, when
+you live on monster corpses you have to kill the monsters and take the
+risk of them killing you.
+</p><p>
+There is a tedious strategy involving wearing two rings of slow
+digestion, and repeatedly removing one or the other ring to avoid its
+``ring hunger'' effect, but always keeping at least one ring on to avoid
+normal food consumption.
+However, it is simpler to survive indefinitely by praying for food.  When you
+pray successfully, your prayer timeout is set to rnz(350), assuming
+that you have neither been crowned nor killed the Wizard.  rnz(i) can
+never be any more than 20 times i, so your prayer timeout cannot be
+any more than 7000.
+</p><p>
+If you pray successfully while starving, your nutrition level is set
+to 900.  Assuming that you only consume one nutrition point every 20
+turns (e.g., you are either a human wearing a ring of slow digestion
+or a xorn wearing an amulet of unchanging), it will take 18000 turns
+for your nutrition level to reach 0 (Fainting).  This is more than
+enough time to ensure that you will be able to pray.
+</p><p>
+This strategy requires you to avoid being crowned, but as of version
+3.4.1, you will never receive a favour for praying while in trouble
+and not on an altar, so this isn't a problem.
+</p><p>
+
+<a name="bones"></a>
+</p><h3>Public Machine More Difficult?</h3>
+There was once an interesting discussion on playing on a
+single-user system versus playing on a multi-user system.  Clearly,
+the difference is that on a multi-user system you can find other
+people's bones files.
+<p>
+Here are some notes on how bones files work:
+</p><ul>
+<li>There can only be one bones file per dungeon level on the system
+(and there are some levels on which bones cannot be left).
+</li><li>When you arrive at a new level, there is a 1/3 chance of loading a
+bones file if there is one for that level on the system.
+</li><li>When you die, the probability that you leave a bones file is
+dependent on your dungeon level.  In vanilla Nethack, you are more
+likely to leave bones at higher (deeper) levels, but in Slash'EM, you
+are more likely to leave bones at lower levels.
+</li></ul>
+<p>
+Is the number of bones files seen by a typical user in a typical game
+any greater on a multi-user system?  The answer turns out to be: only
+if the users on the multi-user system are at differing levels of
+skill.  If they are all at the same skill level and not improving over
+time, then the only relevant difference between the two systems is
+that more Nethack is being played on the multi-user system.
+</p><p>
+So what happens to the number of bones files on the system over time?
+Well, the number of bones files loaded (and hence removed from the
+system) in a typical game must increase with the number of bones files
+on the system.  The probability of leaving a bones file in a typical
+game decreases if there are more bones files on the system - the
+average level reached before dying is the same (to a first
+approximation), but sometimes it won't be possible to leave bones
+because there is already a bones file for that level.
+</p><p>
+Therefore the more bones files there are on the system, the more are
+consumed and the fewer are created.  Hence the number of bones files
+does not increase constantly over time, but reaches a steady state
+which is dependent on the average skill level but not the number of
+users.  If the number of bones files on the system is the same on the
+single-user and multi-user machines, then the number of bones files
+seen during a typical game must also be the same.
+</p><p>
+On a system with varying skill levels, though, experts are likely to
+find more bones than they leave.  Perhaps the easiest way to see this
+is to take an extreme case.  If you are so expert that you ascend all
+the time, then on a single-user system you'll never leave or find
+bones.  On a multi-user system, you'll still never leave bones, but
+there will be plenty there for you to find.  If experts find more
+bones, newbies must find fewer (since the total number of bones files
+remains approximately stable).
+</p><p>
+Do bones files make the game easier or harder?  On the one hand, you
+get to use or sell all the equipment in the bones pile (although it
+will mostly be cursed), but on the other hand, you have to watch out
+for whatever killed the former player.  If the cause of death was a
+classic <acronym title="Yet Another Stupid Death">YASD</acronym> like
+hitting a floating eye, then there's no problem.  If
+it involved being ambushed by hordes of monsters, that is slightly
+tougher, but the hordes could have turned up on a new level at that
+depth too, and if the former player eliminated some of the hordes
+before dying, you are better off than if you were facing a brand-new
+pack.  Problems arise when the original cause of death was something
+like ``gnome with a wand of death'' or ``wimpy hostile monster got lucky
+with a polymorph trap'' or ``player tried to genocide master liches with
+a cursed scroll'', or the former player had powerful pets.
+</p><p>
+Finally, on a multi-user system the bones files are going to be more
+varied and therefore more useful.  If you stick to playing one class,
+there won't be much variety in the bones left on your own system, but
+on a multi-user system you'll find bones piles left by other classes
+with different equipment.  Newbies on a multi-user system also have
+the chance of finding a bones pile left by an expert who suffered YASD
+with most of an ascension kit.
+</p><p>
+
+<a name="wishirl"></a>
+</p><h3>A Nethack Wish In Real Life</h3>
+If you could have one Nethack wish in real life, what would you wish
+for?  This question has appeared on the newsgroup a couple of times.
+I'd wish for holy water, because drinking it cures sickness, and
+once you have one potion, you can make more by dipping ordinary water
+in it.  The only snag is that if you are chaotic, drinking holy water
+will burn you, and it is not clear what is meant by "chaotic" in
+Nethack.  If you suspect you might be chaotic, it is safer to wish for
+a blessed unicorn horn.  I have a separate page with <a href="http://www.statslab.cam.ac.uk/~eva/nethack/wishirl.html" title="more on Nethack wishes in real life">more
+discussion of this topic</a>.
+
+<p>
+</p><hr>
+<div class="navbar">
+This page was written by Eva Myers (erm1001@cam.ac.uk).  If you have
+any comments or corrections, please feel free to <a href="mailto:erm1001@cam.ac.uk">email me</a>.
+<p>
+[<a href="http://www.statslab.cam.ac.uk/~eva/index.html">Back to Eva Myers's Home Page</a>]
+</p></div>
+
+
+
+<script type="text/javascript" src="chrome-extension://njgjimadbabpmogiknngfjooefgbaajh/in-page-script.js"></script></body></html>

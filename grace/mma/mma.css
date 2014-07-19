@@ -1,0 +1,198 @@
+/* css for marlon moonglow's animator webpage */
+@import url("simplehtml.css");
+
+body {
+	margin: 0;
+	padding: 0;
+        max-width: none;
+	}
+
+body> .header {
+	color: #fff;
+	background-color:#3d303d;
+	margin: 0px;
+	padding: 12px 20px 12px 20px;
+	font-family: helvetica, arial, sans-serif;
+        font-size: 2em;
+        font-weight: bold;
+	line-height: 1em;
+	display: block;
+	}
+
+body> .header a,
+body> .header a:link,
+body> .header a:visited,
+body> .header a:active,
+body> .header a:hover {
+	color: #ffffff;
+        text-decoration: none;
+        }
+
+body> .subheader {
+	color: #fff;
+	background-color: #0d6dfd;
+	margin: 10px;
+	padding: 10px 10px 40px 40px;
+	font-family: helvetica, arial, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+	line-height: 1em;
+	display: block;
+}
+
+#sidebar {
+	background: #3d303d;
+	line-height: 3ex;
+	float: right;
+	width: 30ex;
+	margin-left: 40px;
+	margin-bottom: 40px;
+	padding: 1ex 1ex;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1em;
+        font-weight: bold;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+
+#sidebar a {
+/*        text-decoration: none;*/
+}
+
+/*
+#sidebar .webgen-menu-item-selected {
+	color: #f7f7ff;
+}
+*/
+
+#sidebar ul {
+        margin: 0ex 0ex 0ex 0ex;
+        padding: 0;
+        list-style-type: none;
+}
+
+#sidebar LI {
+        display: block;
+}
+
+/*
+#sidebar .webgen-menu-level1 a:before,
+         .webgen-menu-item-selected span:before {
+        content: "\25F3  "; 
+}
+*/
+
+.side {
+	/*color: #333;*/
+	padding: 2px;
+	line-height: 1.7em;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+.evil {
+	margin: 4em 1em 1em 1em;
+	float: left;
+}
+
+.sidetitle {
+	color: #fff;
+	padding: 2px;
+	margin-top: 10px;
+	text-align: center;
+	text-transform: lowercase;
+	letter-spacing: .1em;
+	border-bottom: 1px solid #fff;
+}
+
+#content {
+        background: #0d6dfd;
+        padding: 1em;
+	margin: 1em 40px 10px 40px;
+	max-width: 80ex;
+        text-align: justify;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.inlinepage {
+	padding: 0px 0px;
+	border: none;
+	border-top: 1px solid #aaaac0;
+        padding-top: 2ex;
+        margin-top: 2ex;
+        margin-bottom: 4ex;
+}
+
+.inlinepage .header {
+        color: red;
+        font-size: 2em;
+        font-weight: bold;
+        text-transform: uppercase;
+	}
+
+.posted-header {
+	color: #fff;
+	margin-bottom: 10x;
+	text-align: left;
+	line-height: 1.7em;
+	font-family: helvetica, arial, sans-serif;
+	font-weight: bold;
+	font-size: 0.9em; /* for compliant browsers */
+	border-bottom: 1px solid #fff;
+	}
+
+.posted {
+}
+
+body> #footer .tags {
+        margin: 1em 0ex;
+}
+
+body> #footer #backlinks {
+        margin: 1em 0ex;
+}
+
+body> #footer .pageinfo {
+        margin: 1em 0ex;
+}
+
+body> #footer {
+	border-top: 1px solid #888888;
+	padding: 0ex 20px;
+        margin: 1em 0ex;
+        clear: both;
+}
+
+.pageinfo {
+	clear: both;
+	font-style: italic;
+	display: block;
+}
+
+/* Orange feed button. */
+.feedbutton {
+	background: #ff6600;
+	color: white !important;
+	border-left: 1px solid #cc9966;
+	border-top: 1px solid #ccaa99;
+	border-right: 1px solid #993300;
+	border-bottom: 1px solid #331100;
+	padding: 0px 0.5em 0px 0.5em;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 0.9em;
+	text-decoration: none;
+	margin-top: 1em;
+}
+.feedbutton:hover {
+	color: white !important;
+	background: #ff9900;
+}
+
+img.floatRight {
+	float: right;
+	margin: 10px;
+}

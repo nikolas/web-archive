@@ -1,0 +1,79 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+
+img#bg {
+	width: 100%;
+	height: 40%;
+	background-color: transparent;
+	z-index: -100;
+}
+
+.header {margin:0 0 1px 0;color:#fff;background:#0f66dd;}
+.sideNavHeader {padding:3.5px 0 3.5px 15px;color:#fff;background:#0f66dd;text-transform:uppercase;}
+.search {height:55px;margin-bottom:1px;color:#fff;background:;}
+.searchBox a {padding:1px 4px 1px 4px;text-decoration:none;color:#fff;font-size:14px;border:1px solid #fff;background:;}
+	
+/* CSS for Results Relateds 1 Template */
+div {position:relative;text-align:left;}
+a {text-decoration:underline;}
+a:hover {text-decoration:underline;}
+form {padding:0;margin:0;}
+.noStretch {width:100%;overflow:hidden;} /* prevents content from horizontally stretching dimensions of container */
+.reset {clear:both;overflow:hidden;height:0 !important;} /* to clear horizontal divs */
+.main {width:778px;padding:0 10px 10px 10px;border:1px solid #ccc;border-top:0;background:#fff;margin:0 auto 0 auto;}
+/* header */
+.forSale {font-size:16px;line-height:20px;color:#333;text-align:right;padding-top:10px;}
+.forSale a {color:#0f66dd;}
+.header div {position:static;}
+.header .img {width:175px;vertical-align:middle;}
+.header .img img {border:0;padding:1px;}
+.domain {padding:8px 8px 8px 0;vertical-align:top;}
+.domainName {font-weight:bold;font-size:28px;line-height:32px;}
+.domainName a {color:#fff;text-decoration:none;}
+.tagLine {font-size:12px;font-style:italic;line-height:16px;font-weight:normal;}
+.headerBar {height:8px;margin-bottom:1px;background:;}
+.headerText {padding:10px;color:#fff;background:#0f52a3;}
+.headerText a {color:#fff;}
+.content {width:100%;margin-bottom:1px;}
+/* Side Nav */
+.sideNav {width:161px;text-align:left;font-weight:bold;font-size:12px;vertical-align:top;background:;}
+.sideNavBox {border-bottom:1px solid #fff;}
+.sideNavBox a {display:block;color:#00d;padding:3.5px 4px 3.5px 14px;text-decoration:none;background:;border:1px solid ;border-top:1px solid #fff;}
+.sideNavBox a:hover {background:#dcf;text-decoration:none;color:;}
+/* results */
+.results {padding:10px;vertical-align:top;}
+.results .headerText {margin-bottom:10px;}
+.results p {padding:0 0 10px 0;margin:0;}
+.results ul {list-style:none;padding:0;margin:0;}
+.results li {margin-bottom:20px;font-size:12px;line-height:16px;}
+.results a {color:#0f66dd;}
+.results a:hover {color:;}
+.results a.adTopLink {font-size:14px;font-weight:bold;line-height:17px;text-decoration:underline;}
+.results a.adBottomLink {text-decoration:none;}
+/* search */
+.searchBox {top:17px;font-weight:bold;font-size:16px;vertical-align:middle;text-align:center;}
+.searchBox input {width:230px;vertical-align:middle;margin:0 5px 0 3px;}
+/* Footer */
+.footer {padding:18px 0 10px 0;line-height:16px;margin:0 auto 0 auto;text-align:center;}
+.footer a {color:#333;}
+.footerText {padding:10px;color:#fff;background:;}
+.footerText a {color:#fff;}
+.grLogo {text-align:center;padding-top:10px;}
+.grLogo img {width:154px;height:48px;border:0;}
+.leaderboard {text-align:center;margin:15px 0 15px 0;}
+.skyscraper {text-align:center;margin:15px 0 15px 0;}
+
+.welcome {
+	color: #000;
+	font-size: 3em;
+}
+
+li.things {
+	width: 40px;
+	height: 40px;
+}
+
+iframe {
+	border-width: 16px;
+}

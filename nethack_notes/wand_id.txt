@@ -1,0 +1,149 @@
+Identifying Wands by Zapping
+
+By Kieron Dunbar, <noreik@dimetrodon.demon.co.uk>
+
+ WAND                  | TYPE  | BY GAME | METHOD
+-----------------------+-------+---------+----------------------------
+ light                 | NODIR | yes     | zap or engrave
+ create monster        | NODIR | yes     | zap or engrave
+ enlightenment         | NODIR | yes     | zap or engrave
+ wishing               | NODIR | yes     | zap or engrave
+ secret door detection | NODIR | no      | elimination
+ cold                  | RAY   | yes     | zap or engrave
+ fire                  | RAY   | yes     | zap or engrave
+ sleep                 | RAY   | yes     | zap
+ lightning             | RAY   | yes     | zap or engrave
+ death                 | RAY   | yes     | zap
+ digging               | RAY   | yes     | zap or engrave
+ magic missile         | RAY   | yes     | zap or engrave
+ striking              | IMMED | yes     | zap at monster/object or engrave.
+ polymorph             | IMMED | no      | zap at monster/object or engrave.
+ teleportation         | IMMED | no      | zap at monster/object.
+ probing               | IMMED | yes     | zap at monster/non-empty container.
+ opening               | IMMED | yes     | zap at locked box/chest/door, or
+                       |       |         | box/chest with broken lock.
+ locking               | IMMED | yes     | zap at untrapped empty doorway, or
+                       |       |         | box/chest with open/broken lock.
+ cancellation          | IMMED | no      | zap at cancellable monster/object.
+ undead turning        | IMMED | no      | zap at undead monster/corpse.
+ make invisible        | IMMED | yes     | zap at monster.
+ slow monster          | IMMED | no      | zap at monster or engrave
+ speed monster         | IMMED | no      | zap at monster or engrave.
+ nothing               | IMMED | no      | elimination.
+
+The "BY GAME" column lists whether the game can be relied upon to identify the 
+type of wand when it is zapped when not suffering from any ailments (blindness, 
+confusion, etc.). It may not be accurate under exceptional circumstances (for 
+instance, a wand of create monster is only identified if something is summoned 
+by it), but I haven't attempted to determine the scope of this.
+
+Notes
+
+When zapping at something is referred to, it means to zap in the direction
+of something which must be no more than 6 squares away from the player to be
+certain of correct identification.
+
+Wands with 0 charges will not normally be identified by zapping. Such wands
+will usually give the message "Nothing happens." without prompting for a
+direction, only doing anything to identify their type 1/121 of the time,
+which will zap the wand once and destroy it in the process. You should not 
+confuse it with a wand of secret door detection, which gives no message when 
+zapped.
+
+
+Safety
+
+When zapping an unidentified wand, it is important to ensure that the wand
+does not hit anything it was not intended to hit.
+
+This can be acchieved by zapping the wand somewhere where you can see a 
+distance of at least 13 squares (the maximum range of a wand), where you can 
+see every square between you and a wall at least 7 squares away towards a wall 
+you can see when you have reflection, or towards a door.
+
+This range is not correct for wands of digging, but fortunately the only 
+problem that can result directly from this is zapping it into a shop. This can 
+be avoided by always zapping towards an area you have already explored.
+
+You should not zap a wand towards a monster unless you know that it isn't a
+wand of polymorph as it may turn into something you are ill-equipped to deal 
+with.
+
+If you do not have reflection yourself, you should avoid zapping wands which 
+could have the "RAY" type towards monsters which are reflective or have hands 
+to hold a shield of reflection with unless you are far enough away for a 
+reflected ray to not hit you.
+
+You should not zap an unidentified wand towards a dangerous monster unless you 
+know that it isn't a wand of speed monster, create monster, or make invisible 
+(unless you can see invisible). You should avoid this in general anyway, as
+high level monsters are often capable of resisting wands zapped at them.
+
+You should not zap an unidentified wand in the direction of a shop unless you 
+either know that it isn't a wand of digging or are willing to deal with an
+angry shopkeeper.
+
+Practical wand identification
+
+I find it useful to zap a wand as soon as it is safe to do so in the knowledge 
+that most of the special identification conditions are only needed for a small 
+number of wand types. I do try to be prepared, though, and therefore carry
+something I can visibly cancel and a corpse with me from the moment I find
+them for this purpose. If there's a chest or large box nearby, I'll use that
+to test wands of opening, locking and probing. If not, I'll use a convenient
+(preferably locked) door instead, 
+
+I've included a checklist of the things that need to be checked to identify a 
+wand conclusively. I tend to make a copy of this list in a text document, but 
+it would be almost as easy to name the wand YNNYYYN or something instead.
+
+type      zap   probe open  lock  canc' unde' mons' 
+caesium   Y     N     Y     N     Y     Y     N
+
+Just in case the names aren't too clear, these mean:
+zap   The wand has been zapped.
+probe The wand has been zapped at something it could probe (a monster or a
+      container with contents).
+open  The wand has been zapped at an open box/door or a box with a broken lock.
+lock  The wand has been zapped at a locked box/door or a box with a broken lock.
+canc' The wand has been zapped at something which can be noticeably cancelled.
+unde' The wand has been zapped at a monster/corpse.
+mons' The wand has been zapped at a monster.
+
+Open and lock can, of course, be switched if it makes more sense to you like 
+that, and you should feel free to ignore those checks which only matter for 
+wands which have already been identified.
+
+It is worth noting that, if every check apart from the "mons'" one has failed, 
+engraving something on the ground and then attempting to engrave with the wand 
+will uniquely identify the wand. It is possible to engrave before the other 
+checks, but this may waste a charge.
+
+Cancellation
+
+Full details on cancellation are available elsewhere. I'll simply mention a few 
+good and bad things to use to test for this particular wand:
+
+Good things include:
+1. Things you've discovered to be blessed or cursed on an altar.
+2. Things you've discovered to not be uncursed +0 items through identify 
+   scrolls or being part of your initial inventory.
+3. Items which you have tried on and found to be enchanted or cursed (you must 
+   have removed cured items somehow, of course).
+4. Weapons which have welded to the hand of a monster.
+5. Stackable weapons (daggers, darts, arrows and crossbow bolts) which are 
+   described identically but don't stack.
+6. Items which your pet will only walk on reluctantly.
+
+Bad things include:
+1. Wands, bags of tricks, magic markers, and magic horns, harps, drums and 
+   bells (you will lose charges from something potentially useful).
+2. Books or scrolls, as cancellation will usually blank them (which may be 
+   useful), and fire may destroy them (which probably won't).
+3. Potions, as cancellation does not affect booze, fruit juice or oil 
+   (important if unidentified), and striking will destroy potions.
+4. Yourself. You can't zap the wand at items on the ground at the same time,
+   and many wands won't be identified by this method. And irradiating yourself
+   with pure energy may be somewhat unpleasant.
+5. And, of course, anything you like and wouldn't like to see polymorphed into 
+   something else (unless you've identified polymorph) or cancelled.

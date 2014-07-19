@@ -1,0 +1,243 @@
+            <html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+
+
+<base href="http://images.ultsearch.com/" />
+<title>dreams</title>
+<meta name="description" content="Get dreams information, Entertainment information, Entertainment - General information at dreammaker.com, including related links and much much more"/>
+<meta name="keywords" content="dreams, Entertainment, Entertainment - General, dreammaker.com" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+<script src="/inc/homepage.js" type="text/JavaScript"></script>
+<script src="/js/ajax.js" type="text/javascript"></script>
+
+<!-- s=bwlegion3.phl.marchex.com/10.216.106.63 c=173.245.73.14 -->
+
+<script type="text/javascript" language="JavaScript">
+
+function legionClickTrack(that, adpos) {
+	var enc_url = 'http://www.dreammaker.com/?p=AFD_L&r=' + adpos + '&afdurl=' + encodeURIComponent(that.href);
+	sendAjaxGetRequest(enc_url);
+}
+
+function monitor(response) {
+
+	var num = '';
+	
+	if (response.ads) {
+		num = response.ads.length;
+	} else {
+		num = '0';
+	}
+
+	var mon_url = 'http://www.dreammaker.com/?num_afd_ads=' + num;
+	sendAjaxGetRequest(mon_url);
+}
+	
+/*
+ * The following code block is optional. However, your page must be
+ * able to identify whether the user entered or clicked a query term.
+ */
+function GetParam(name) {
+  var match = new RegExp('[\?&]'+name + "=([^&]+)","i").exec(location.search);
+  if (match==null) return null;
+  else return decodeURIComponent(match[1]).replace(/\+/g,' ');
+}
+
+/*
+ * Handle banned domain by redirecting to somewhere else.
+ */
+function redirect() {
+  window.location = "http://dr.searching.net/?rid=10061&q=searching";
+}
+
+/*
+ * The google_afd_request object specifies values for different AFD parameters.
+ */
+var google_afd_request = {
+  client: 'ca-dp-mdnh02_js'
+  , domain_name: 'dreammaker.com'
+  , hl: 'en'
+  , num_radlinks: 15
+  , channel: 'Entertainment'
+    , kw: encodeURIComponent('dreams,Entertainment,Entertainment,Entertainment - General')
+  , s: 'dreammaker.com'
+      };
+
+/*
+ * variables for ads, popular categories and related searches.
+ * The google_afd_ad_request_done function, which is defined below,
+ * creates the formatted HTML for each of these elements.
+ */
+var ads = '';
+var popularCategories = '';
+var relatedSearches = '';
+
+/*
+ * The show_afd_ads.js file, which is included below, sends the AFD response
+ * to this function.
+ */
+var search_token = null;
+function google_afd_ad_request_done(google_afd_response) {
+
+  monitor(google_afd_response);
+
+  if (google_afd_response.faillisted || google_afd_response.needsreview) {
+    redirect();
+    return;
+  }
+
+  if (google_afd_response.search_token) {
+    // save the search_token for user input search
+    search_token = google_afd_response.search_token;
+  }
+  
+  // Format ads.
+  if (google_afd_response.ads && google_afd_response.ads.length > 0) {
+    var google_ads = google_afd_response.ads;
+    for (var i = 0; i < google_ads.length; i++) {
+
+      var adpos = i + 1;
+
+      ads += '<h2><a class="Query" target="_blank" href="' + google_ads[i].url + '" onclick="legionClickTrack(this, ' + adpos + ');" >' +
+      google_ads[i].line1 + '</a></h2><p>' + google_ads[i].line2 +
+      (google_ads[i].line3 != undefined ? google_ads[i].line3 : ' ') +
+      '</p><h3><a class="SpLnk" target="_blank" href="' +
+      google_ads[i].url + '" onclick="legionClickTrack(this, ' + adpos + ');" >' + google_ads[i].visible_url + '</a></h3>'
+    }
+  }
+  
+  // Format popular categories.
+  if (google_afd_response.categories && google_afd_response.categories.length > 0) {
+    var google_categories = google_afd_response.categories;
+    popularCategories += '<ul>';
+    for (var i = 0; i < google_categories.length; i++) {
+      popularCategories += '<li><a href="http://www.dreammaker.com/-/results/?domain_name=' +
+        google_afd_response.request.s + '&k=' +
+        encodeURIComponent(google_categories[i].term) +
+        '&token=' + google_categories[i].token + '&p=PC&gm=t">' +
+        google_categories[i].term + '</a></li>';
+    }
+    popularCategories += '</ul>';
+  }
+  
+  // Format related searches.
+  if (google_afd_response.link_units && google_afd_response.link_units.length > 0) {
+    var google_link_units = google_afd_response.link_units;
+    relatedSearches += '<ul>';
+    for (var i = 0; i < google_link_units.length; i++) {
+      relatedSearches += '<li><a href="http://www.dreammaker.com/-/results/?domain_name=' +
+        google_afd_response.request.s + '&k=' +
+        encodeURIComponent(google_link_units[i].term) +
+        '&token=' + google_link_units[i].token + '&p=RS&gm=t">' +
+        google_link_units[i].term + '</a></li>';
+    }
+    relatedSearches += '</ul>';
+  }
+}
+
+/*
+ * set search token
+ */
+function before_submit() {
+  if (search_token) {
+    document.getElementById('token_input').value = search_token;
+  }
+  return true;
+}
+</script>
+
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta name="ROBOTS" content="NOINDEX,NOFOLLOW"/>
+<script type="text/javascript" language="JavaScript" src="http://pagead2.googlesyndication.com/apps/domainpark/show_afd_ads.js"></script>
+</head>
+<body>
+  <!-- hdr box -->
+  <div id="HdrBox">
+  <h1>Welcome to <a href="http://www.dreammaker.com/?gm=t" title="Welcome to dreammaker.com">dreammaker.com</a></h1>
+  </div>
+  <!-- hdr box end -->
+
+  <!-- directory box -->
+  <div id="DirBox"><div id="DB">
+  
+  <!-- dir right box -->
+  <div id="SponsResRt"><div id="SpResR">
+  <div class="RL">
+    <h2>Related Searches</h2>
+    <script type="text/javascript">
+      document.write(relatedSearches);
+    </script>
+    <h2>Popular Categories</h2>
+    <script type="text/javascript">
+      document.write(popularCategories);
+    </script>
+  </div>
+  </div></div>
+  
+  <div id="ResBox"><div id="RB">
+    <div align="right" valign="top"></div>
+    <h2 style="font-size: 15px; font-weight: bold; margin: 10px 0px 10px 0px;">Sponsored Listings </h2>
+    <script type="text/javascript">
+      document.write(ads);
+    </script>
+    <p>
+    <a href="http://www.marchex.com/product/adhere/signup.html" class="add">Advertise on this network</a>
+    </p>
+  </div></div>
+  
+  <div style="clear:both; padding:5px;"></div>
+  </div></div>
+  
+  <!-- footer -->
+  <!-- searchbox -->
+  <div id="SchBox"><div id="SB">
+  <form action="http://www.dreammaker.com/-/results/" method="get" onsubmit="return before_submit();">
+  <input id="token_input" type="hidden" name="token" value="">
+  <input type="hidden" name="user_search" value="true">
+  <input type="hidden" name="gm" value="t" />
+  <table border="0" cellpadding="0" cellspacing="0" width="530">
+  <tbody><tr>
+  <td><h3>Search:</h3></td>
+  <td charoff="125"><input name="q" value="" style="width: 300px;" type="text" maxlength="58" /></td>
+  <td charoff="430"><input value="Search" title="Click here to start search" type="submit" /></td>
+  </tr>
+  </tbody></table>
+  </form>
+  
+  <p>
+  <script language="JavaScript">
+  <!--
+     getBookmarkLink('Bookmark This Page', 'CTRL-D to Bookmark This Page');
+     document.write(' | ');
+     getHomePageLink('Set Your Homepage', 'Drag This Link To Your Home Button');
+  // -->
+  </script>
+  </p>
+  </div></div>
+  <div class="clearboth"><img src="/images/spacer.gif" width="1" height="1" alt=" " /></div>
+  <!-- searchbox end -->
+  
+  <!-- footer -->
+  <div id="foot"><div id="FT">
+    &copy; 2010 MDNH, Inc.
+        This domain may be for sale. <a href="http://www.mdnhinc.com/contact?dom=dreammaker.com">Click here for more information</a>.
+    </div></div>
+  <!-- footer end -->
+  
+  <!-- tracking snippet for ggl analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-2522429-25");
+pageTracker._initData();
+pageTracker._setDomainName(".dreammaker.com");
+pageTracker._trackPageview("http://www.dreammaker.com/");
+</script>
+
+    <img src="http://c.openclick.com/t?c=eJwNyjEOwjBMQNHbeEPg2HWcwQMS6lg7WHWQEFSlUsT5yfj3fmwWvXpr-n4d4mvr1uAj29XhNKQWQgQ1TMokkijz6K6fKov-4Fh2qx.wvsI0nYxLywUqIi485RucBzIiS9E-fYUdBg==&requestId=TI3fnQrYaj8AAB5a@TsAAABF" height="1" width="1" style="display: none"/>
+</body>
+</html>
